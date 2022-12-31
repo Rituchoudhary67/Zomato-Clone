@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-form {
+    background-color:rgba(0, 0, 0, 0.7);
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    top: 1px;
+    /* margin: 0 auto; */
+    /* margin-top: 100px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px; */
+    display: none;
+    position: fixed;
+    /* cursor: pointer; */
+    /* left: 40%; */
+}
+.sign-up-btn {
+    cursor: pointer;
+}
+.sub-cont-form {
+    max-width: 430px;
+    /* max-height: 480px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0 0 0 / 21%);
+    z-index: 1000;
+    position: relative;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    cursor: pointer;
+    /* background-color: red; */
+}
+.form-container h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 1rem 0px;
+    font-weight: 500;
+    color: rgb(79, 79, 79);
+    font-family: poppins,sans-serif;
+}
+.form-container2 {
+    height: 80%;
+    /* background-color: pink; */
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    /* font-size: larger; */
+   
+}
+hr {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 7px;
+}
+.or-text {
+    background-color: white;
+    width: 20px;
+    font-size:  larger;
+    margin: -15px auto 15px;
+}
+.google-btn img {
+    height: 30px;
+    width: 30px;
+}
+.form-container2 .input-box , .google-btn {
+    /* background-color: deeppink; */
+    width: 95%;
+    height: 15%;
+    /* font-size: large; */
+    margin: 10px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.account {
+    width: 95%;
+    height: 15%;
+    padding: 10px;
+    border-radius: 5px;
+    /* font-size: large; */
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    margin: 10px;
+    border: 1px solid black;
+    margin-top: -10px;
+    cursor: pointer;
+}
+.account:active {
+    color: white;
+    background-color: crimson;
+}
+.google-btn {
+    margin-top: -35px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 2px;
+    /* margin: 10px; */
+}
+.input-check {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.form-para {
+     /* border: 2px solid black; */
+     width: 90%;
+     position: relative;
+     top: -20px;
+     text-align: justify;
+     margin-left: 30px;
+}  
+.create {
+    margin-top: -40px;
+    background-color: pink;
+    
+}
+.form-para2 {
+    margin-left: 10px;
+}
