@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zomato_clone</title>
+
+    <link rel="icon" href="./images/zomato_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	
+	<link rel="stylesheet" href="style.css">
+	<!-- for connecting css of sign-up -->
+	<link rel="stylesheet" href="./css/signup.css">
+	<!-- for connecting css file of login -->
+	<link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+	<!-- Header showcase-->
+	<header class="showcase">
+		<div class="container">
+			<nav>
+				<input type="checkbox" id="click" >
+                <label for="click" class="menu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </label>
+
+				<div class="getapp">
+					<a href="./html/get-app.html"><i class="fa fa-mobile-alt"></i> Get the App</a>
+				</div>
+				<div class="right-menu">
+                    <a href="./html/Add_investor.html">Investor Relations</a>              
+                    <a href="./html/Add_restaurant.html">Add Restaurant</a>
+					<div class="log-in-btn">Log in</div>
+					<div class="sign-up-btn">Sign up</div>
+			</nav>
+			<div class="hero-text">
+				<img src="images/logo.webp" width="300">
+				<h1>Discover the best food & drinks in <span class="bold-place">Punjab</span></h1>
+				<div class="search-bar">
+					<div class="search-2">
+						<i class="fa fa-map-marker-alt"></i>
+						<input type="text" placeholder="Punjab" class="city_location">
+						<!-- ----- -->
+						<div id="all_city">
+
+						</div>
+
+
+						<!-- ------ -->
+						<i class="fa fa-caret-down" id="drop-icon"></i>
+					</div>
+					<div class="search-3">
+						<i class="fas fa-search"></i>
+					    <input type="text" class="search-right" placeholder="Search for restaurant">				
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Order section -->
+	<section class="container">
+		<div class="order-cat">
+			<div class="hover">
+				<img alt="Order Online" src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&amp;fit=around|402:360&amp;crop=402:360;*,*" loading="lazy" >
+				<!-- <img src="images/order1.webp"> -->
+				<div class="order-title-bg">
+					<p class="order-title">Order Food Online</p>
+				</div>
+			</div>
+			<div class="hover">
+				<img alt="Dining" src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&amp;fit=around|402:360&amp;crop=402:360;*,*" loading="lazy" >
+				<!-- <img src="images/order2.webp"> -->
+				<div class="order-title-bg">
+					<p class="order-title">Go out for a meal</p>
+				</div>
+			</div>
+			<div class="hover">
+				<img alt="Nightlife and Clubs" src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&amp;fit=around|402:360&amp;crop=402:360;*,*" loading="lazy">
+				<!-- <img src="images/order3.jpg"> -->
+				<div class="order-title-bg">
+					<p class="order-title">Nightlife & Clubs</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	
+	<!-- Collections -->
+	<section class="container">
+		<h1>Collections</h1>
+		<div class="collections">
+			<p>Explore curated lists of top restaurants, cafes, pubs, and bars in Punjab, based on trends</p>
+			<a href="#">All collections in Punjab <i class="fa fa-caret-right"></i></a>
+		</div>
+		<div class="collection-grid">
+			<div class="collection-box">
+				<img src="https://b.zmtcdn.com/data/collections/9f698dc6251cca64722726c3203eed03_1670660951.jpg?output-format=webp" alt="18 best insta-worthy places">
+                    <div class="collection-title">
+                        <h3>18 best insta-worthy places</h3>
+                        <p>18 Places <i class="fa fa-caret-right"></i></p>
+                    </div>
+			</div>
+			<div class="collection-box">
+				<img src="https://b.zmtcdn.com/data/collections/c46add7d3b90a477399c29de0705d3cf_1670661569.jpg?output-format=webp" alt="Top 10 picks of the week">
+                    <div class="collection-title">
+                        <h3>Trending This Week</h3>
+                        <p>10 Places <i class="fa fa-caret-right"></i></p>
+				</div>
+			</div>
+			<div class="collection-box">
+				<img src="https://b.zmtcdn.com/data/collections/8e46a581134a20b56489e22029095060_1669368003.jpg?output-format=webp" alt="14 Lit Party Places">
+                    <div class="collection-title">
+                        <h3>14 Lit Party Places</h3>
+                        <p>14 Places <i class="fa fa-caret-right"></i></p>
+                    </div>
+			</div>
+			<div class="collection-box">
+				<img src="https://b.zmtcdn.com/data/collections/a9e8377fce9b702add08c5305100f8ec_1669367619.jpg?output-format=webp" alt="16 Romantic Dinning Places">
+                    <div class="collection-title">
+                        <h3>16 Romantic Dinning Places</h3>
+                        <p>16 Places <i class="fa fa-caret-right"></i></p>
+                    </div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Localities -->
+	<section class="container">
+		<h1 class="local-title">Popular localities in and around <span class="bold-place">Punjab</span></h1>
+		<div class="locals-grid">
+			<div class="local-box">
+                <p>Mohali <br> <span>1108 places</span> </p>
+                <i class="fa fa-chevron-right"></i>
+			</div>
+			<div class="local-box">
+				<p>Ludhiana <br> <span>450 places</span></p>
+                    <i class="fa fa-chevron-right"></i>
+			</div>
+			<div class="local-box">
+                <p>Jalandhar <br> <span>388 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>          
+            <div class="local-box">
+                <p>Pathankot <br> <span>108 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>          
+            <div class="local-box">
+                <p>Hoshiarpur <br> <span>700 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>          
+            <div class="local-box">
+                <p>Dasuya <br> <span>58 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>  
+			<div class="local-box">
+                <p>Amritsar<br> <span>27 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>        
+            <div class="local-box">
+                <p>RoopNagar <br> <span>19 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>                      
+            <div class="local-box">
+                <p class="more">see more <i id="more-items" class="fa fa-chevron-right"></i><i class="fa fa-chevron-up" id="more-item-up"></i></p>
+            </div>
+               
+			<!-- -------------- -->
+		<div id="show-more-none">
+             <div class="local-box">
+                <p>Firozpur <br> <span>85 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>          
+            <div class="local-box">
+                <p>Gurdaspur <br> <span>65 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>         
+            <div class="local-box">
+                <p>Jalalabad <br> <span>18 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>          
+            <div class="local-box">
+                <p>Fazilka <br> <span>29 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>         
+            <div class="local-box">
+                <p>Patiala <br> <span>73 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>  
+            <div class="local-box">
+                <p>Kapurthala <br> <span>42 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>      
+            <div class="local-box">
+                <p>Moga <br> <span>58 places</span>)</p>
+                <i class="fa fa-chevron-right"></i>
+            </div>         
+            <div class="local-box">
+                <p>Mansa <br> <span>32 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>          
+            <div class="local-box">
+                <p>Sangrur <br> <span>46 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>          
+            <div class="local-box">
+                <p>Abohr <br> <span>18 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>          
+           <div class="local-box">
+                <p>Kharar <br> <span>68 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>          
+           <div class="local-box">
+                <p>Khana <br> <span>35 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>          
+           <div class="local-box">
+                <p>Dera Baba Nanak <br> <span>58 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>          
+           <div class="local-box">
+                <p>Kathgarh <br> <span>52 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>          
+           <div class="local-box">
+                <p>Dinanagar <br> <span>93 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>          
+           <div class="local-box">
+                <p>Madhopur <br> <span>44 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>          
+           <div class="local-box">
+                <p>Panchkula <br> <span>88 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div>         
+            <div class="local-box">
+                <p>Tanda<br> <span>22 places</span></p>
+                <i class="fa fa-chevron-right"></i>
+            </div> 
+	</div>
+		</div>	
+		<!-- -------------- -->
+		</div>
+	</section>
+
+	<!-- Get zomato app -->
+	<section class="zom-app">
+		<img src="images/mobile-app.webp" alt="zomato-app">
+		<div class="zom-app-right">
+			<h1>Get the Zomato App</h1>
+			<p>We will send you a link, open it on your phone to download the app</p>
+			<div class="radio-btn">
+				<label for="email"><input type="radio" id="email" name="app" value="email">Email</label>
+				<label for="phone"><input type="radio" id="phone" name="app" value="phone">Phone</label>
+			</div>
+			<div class="email-phone">
+				<input type="text" placeholder="Email">
+				<a class="btn-share" href="#">Share App Link</a>
+			</div>
+			<p class="small-text"><small>Download app from</small></p>
+			<div class="app-store">
+				<div class="app-image">
+					<img src="images/app-store1.webp">
+				</div>
+				<div class="app-image">
+					<img src="images/app-store2.webp">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Explore -->
+	<section class="container">
+		<h1 class="explore-title">Explore other options for you here</h1>
+		<h2 class="explore-title-2">Popular cuisines near me</h2>
+		<div class="wrap-links">
+			<a href="#">Bakery food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Beverages food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Biryani food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Burger food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Chinese food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Continental food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Desserts food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Ice Cream food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Italian food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Kebab food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Maharashtrian food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Bakery food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Beverages food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Biryani food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Burger food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Chinese food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Continental food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Desserts food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Ice Cream food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Italian food near me</a>
+		</div>
+		<h2 class="explore-title-2">Popular restaurant types near me</h2>
+		<div class="wrap-links">
+			<a href="#">Bakery food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Beverages food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Biryani food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Burger food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Chinese food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Continental food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Desserts food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Ice Cream food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Italian food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Kebab food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Maharashtrian food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Bakery food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Beverages food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Biryani food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Burger food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Chinese food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Continental food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Desserts food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Ice Cream food near me</a>
+			<span class="dot-seperator"></span>
+			<a href="#">Italian food near me</a>
+		</div>
+		<h2 class="explore-title-2">Top Restaurant Chains</h2>
+		<div class="restraunt-chains">
+			<a href="#">Bikanervala</a>
+			<a href="#">Burger King</a>
+			<a href="#">Domino's</a>
+			<a href="#">Dunkin' Donuts</a>
+			<a href="#">KFC</a>
+			<a href="#">Krispy Kreme</a>
+			<a href="#">McDonald's</a>
+			<a href="#">Pizza Hut</a>
+			<a href="#">WOW! Momo</a>
+		</div>
+		<h2 class="explore-title-2">Cities We Deliver To</h2>
+		<div class="footer-links">
+			<ul>
+				<li><a href="#">Delhi NCR</a></li>
+				<li><a href="#">Hyderabad</a></li>
+				<li><a href="#">Mumbai</a></li>
+				<li><a href="#">Bengaluru</a></li>
+				<li><a href="#">Pune</a></li>
+				<li><a href="#">Delhi NCR</a></li>
+				<li><a href="#">Hyderabad</a></li>
+				<li><a href="#">Mumbai</a></li>
+				<li><a href="#">Bengaluru</a></li>
+				<li><a href="#">Pune</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Delhi NCR</a></li>
+				<li><a href="#">Hyderabad</a></li>
+				<li><a href="#">Mumbai</a></li>
+				<li><a href="#">Bengaluru</a></li>
+				<li><a href="#">Pune</a></li>
+				<li><a href="#">Delhi NCR</a></li>
+				<li><a href="#">Hyderabad</a></li>
+				<li><a href="#">Mumbai</a></li>
+				<li><a href="#">Bengaluru</a></li>
+				<li><a href="#">Pune</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Delhi NCR</a></li>
+				<li><a href="#">Hyderabad</a></li>
+				<li><a href="#">Mumbai</a></li>
+				<li><a href="#">Bengaluru</a></li>
+				<li><a href="#">Pune</a></li>
+				<li><a href="#">Delhi NCR</a></li>
+				<li><a href="#">Hyderabad</a></li>
+				<li><a href="#">Mumbai</a></li>
+				<li><a href="#">Bengaluru</a></li>
+				<li><a href="#">Pune</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Delhi NCR</a></li>
+				<li><a href="#">Hyderabad</a></li>
+				<li><a href="#">Mumbai</a></li>
+				<li><a href="#">Bengaluru</a></li>
+				<li><a href="#">Pune</a></li>
+				<li><a href="#">Delhi NCR</a></li>
+				<li><a href="#">Hyderabad</a></li>
+				<li><a href="#">Mumbai</a></li>
+				<li><a href="#">Bengaluru</a></li>
+				<li><a href="#" class="last-link">See more</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Delhi NCR</a></li>
+				<li><a href="#">Hyderabad</a></li>
+				<li><a href="#">Mumbai</a></li>
+				<li><a href="#">Bengaluru</a></li>
+				<li><a href="#">Pune</a></li>
+				<li><a href="#">Delhi NCR</a></li>
+				<li><a href="#">Hyderabad</a></li>
+				<li><a href="#">Mumbai</a></li>
+				<li><a href="#">Bengaluru</a></li>
+			</ul>
+		</div>
+	</section>
+	<!-- Footer -->
+	<section class="footer-bar">
+		<div class="container">
+			<div class="footer-lang">
+				<img class="footer-logo" src="./images/zomato-black-logo.webp" alt="zomato">
+				<div class="btn-lang-top">
+					<a class="lang-btn" href="#"><img src="images/india-flag.jpg" height="13px"> India <small><i class="fa fa-chevron-down"></i></small></a>
+					<a class="lang-btn" href="#"> <i class="fa fa-globe"></i> English <small><i class="fa fa-chevron-down"></i></small></a>
+				</div>
+			</div>
+			<div class="footer-last-links">
+				<ul>
+					<li><h4 class="footer-list-title">COMPANY</h4></li>
+					<li><a href="#">Who We Are</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Report Fraud</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Financial Information</a></li>
+				</ul>
+				<ul>
+					<li><h4 class="footer-list-title">FOR FOODIES</h4></li>
+					<li><a href="#">Code of Conduct</a></li>
+					<li><a href="#">Community</a></li>
+					<li><a href="#">Blogger Help</a></li>
+					<li><a href="#">Mobile Apps</a></li>
+				</ul>
+				<ul>
+					<li><h4 class="footer-list-title">FOR RESTAURANTS</h4></li>
+					<li><a href="#">Add Restaurant</a></li>
+					<li><a href="#">Claim your Listing</a></li>
+					<li><a href="#">Business App</a></li>
+					<li><a href="#">Restaurant Widgets</a></li>
+					<li><a href="#">Product Businesses</a></li>
+				</ul>
+				<ul>
+					<li><h4 class="footer-list-title">FOR YOU</h4></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+				<div>
+					<h4 class="footer-list-title">SOCIAL LINKS</h4>
+					<div class="footer-social-icons">
+						<a href="#"><i class="fab fa-facebook"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</div>
+					<div>
+						<img src="images/app-store1.webp" width="137px">
+						<img src="images/app-store2.webp" width="137px">
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<p><small>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2021 © Zomato™ Ltd. All rights reserved.</small></p>
+			</div>
+		</div>
+		
+	</section>
+  <!-- api_create -->
+	
+
+ 
+	<!-- for sign-up form pop-up will show -->
+	<div class="container-form">
+       <div class="sub-cont-form">
+		<div class="form-container">
+            <h1>Sign up</h1>
+            <i class="fa fa-times" id="cross_mark" aria-hidden="true"></i>
+        </div>
+        <form class="form-container2">
+                <input type="text" placeholder="Full name" class="input-box"><br>
+                <input type="email" placeholder="Email" class="input-box"><br>
+                <input type="checkbox" class="input-check">
+                <p class="form-para"> I agree to Zomato's <span style="color: crimson;">Terms of Service</span>, <span style="color: crimson;">Privacy Policy</span> and <span style="color: crimson;">Content Policies</span><br></p>
+                <button class="account">Create account</button><br>
+                <hr>
+                <p class="or-text">or</p><br>
+                <button class="google-btn"><img src="https://i.pinimg.com/originals/27/fa/9f/27fa9f7a7ce6789c74f3679be56786c8.jpg" alt="google"></button>
+                <p class="form-para2">Already have an account? <span style="color: crimson;">Log in</span></p>
+        </form>
+	   </div>
+    </div>
+   
+	 <!-- after clicking account btn next page has to shown -->
+         <div class="container-form">
+            <div class="sub-cont-form">
+				<div class="form-container">
+					<h1>Enter OTP</h1>
+					<i class="fa fa-times" id="cross_mark" aria-hidden="true"></i>
+				</div>
+			</div>
+		 </div>
+
+     <!-- login form for adding pop-up functionality -->
+	 <main class="main">
+        <div class="login-container">
+            <section class="wrapper">
+               
+                <div class="heading flex">
+                    <h1 class="text text-large">Login</h1>
+                    <i class="fa fa-times" id="login_Cross" aria-hidden="true"></i>
+                </div>
+                <div class="send flex">
+                    <div class="send1">
+                        <select>
+                            <option>+91</option>
+                            <option>+88</option>
+                            <option>+67</option>
+                            <option>+90</option>
+                            <option>+89</option>
+                        </select>
+                    
+                        <input type="number" name="phone" id="phone" class="text1 input-control" placeholder="Phone">
+                    </div>
+                    <button class="btn">Send One Time Password</button>
+                </div>
+                <div class="striped">
+                    <span class="striped-line"></span>
+                    <span class="striped-text">or</span>
+                    <span class="striped-line"></span>
+                </div>
+                <div class="method">
+                    <div class="method-control">
+                        <a href="#" class="method-action">
+                            <!-- <i class="ion ion-logo-google"></i> -->
+							<svg xmlns="http://www.w3.org/2000/svg" fill="#EF4F5F" width="24" height="24" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="login-email"><title>mail-fill</title><path d="M10 9.58c-1.62 0-10-4.76-10-4.76v-0.74c0-0.92 0.74-1.66 1.66-1.66h16.68c0.92 0 1.66 0.74 1.66 1.66l-0.020 0.84c0 0-8.28 4.66-9.98 4.66zM10 11.86c1.78 0 9.98-4.46 9.98-4.46l0.020 10c0 0.92-0.74 1.66-1.66 1.66h-16.68c-0.92 0-1.66-0.74-1.66-1.66l0.020-10c0 0 8.36 4.46 9.98 4.46z" ></path></svg>
+                            <!-- <i class="fa-solid fa-envelope" style="color: red; "></i> -->
+                            <span>Continue with Email</span>
+                        </a>
+                    </div>
+                    <div class="method-control">
+                        <a href="#" class="method-action">
+                            <img src="./images/login/icon.png" alt="">
+                            <span>Continue with Google</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+	<script src="app.js"></script>
+    <script src="./js/signUp.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>
